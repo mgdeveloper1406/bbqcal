@@ -86,5 +86,5 @@ function calculate() {
     <p>${Math.ceil(drinksQtt)}L alcohol-free drinks</p>
     </div>`
     
-    result.innerHTML += `<p class="res2">Please be aware that these quantities are estimates and that you may want to change them according to the weather and age of the adults.</p>`
+    result.innerHTML += `<p class="res2">Please be aware that these quantities are estimates and that you may want to change them according to the weather and age of the adults</p>`
 }
