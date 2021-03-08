@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredoka+One&family=PT+Sans+Caption&display=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">  
+    <title>BBQ Calculator</title>
+</head>
+
+<body>
+    <header>
+        <h1>BBQ Calculator</h1>
+        <h2>Food & Drink</h2>
+        <h3>Based on the number of guests, the BBQ Calculator will tell you how much food and drink is needed for your barbecue</h3> 
+    </header>
+
+    <main>
+        <p class="question">How many guests are coming?</p>
+
+        <div id="noveg" class="guests"> <!--Meat-eaters-->
+
+            <p class="title">Meat-eaters</p>
+
+            <div class="ad">
+                <img class="people" src="assets/a.png" alt="">
+                <p>Adults</p>
+                <input type="number" name="adults" id="adults" min="0" value="0">
+            </div>
+            
+            <div class="ki">
+                <img class="people" src="assets/k.png" alt="">
+                <p>Kids</p>
+                <input type="number" name="kids" id="kids" min="0" value="0">
+            </div>
+        </div>
+
+        <div id="veg" class="guests"> <!--Vegetarian-->
+
+            <p class="title">Vegetarians</p>
+
+            <div class="ad">
+                <img class="people" src="assets/veg-a.png" alt="">
+                <p>Adults</p>
+                <input type="number" name="veg-adults" id="veg-adults" min="0" value="0">
+            </div>
+
+            <div class="ki">
+                <img class="people" src="assets/veg-k.png" alt="">
+                <p>Kids</p>
+                <input type="number" name="veg-kids" id="veg-kids" min="0" value="0">
+            </div>
+        </div>
+
+        <p class="question">How long will the BBQ last?</p>
+        
+        <div id="duration">
+            <p>Up to six hours</p>
+            <input type="radio" name="time" value="1" checked required>
+            
+            <p>More than six hours</p>
+            <input type="radio" name="time" value="2">
+        </div>
+
+        <div id="button">
+            <button class="question" onclick="calculate()">Calculate</button>
+        </div>
+       
+        <div id="result"></div><!--Result-->
+
+        <footer id="credits">
+            Created by <a href="https://github.com/FernandaRicciardi" target="_blank" rel="noopener">Fernanda Ricciardi</a>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
