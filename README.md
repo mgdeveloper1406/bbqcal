@@ -1,4 +1,4 @@
-# BBQ-Calculator
+# BBQ Calculator
 
 :raising_hand: Hiya 
 
