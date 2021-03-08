@@ -71,7 +71,7 @@ function calculate() {
     result.innerHTML += 
     `<div class="icons">
     <img src="assets/veg.png" alt="">
-    <p>${vegQtt}kg vegetarian-friendly food</p>
+    <p>${vegQtt}kg vegetarian food</p>
     </div>`
     
     result.innerHTML += 
