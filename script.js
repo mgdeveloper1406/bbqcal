@@ -65,25 +65,25 @@ function calculate() {
     result.innerHTML += 
     `<div class="icons">
     <img src="assets/meat.png" alt="">
-    <p>${Math.ceil(meatQtt)}kg meat</p>
+    <p>${meatQtt.toFixed(1)}kg meat</p>
     </div>`
     
     result.innerHTML += 
     `<div class="icons">
     <img src="assets/veg.png" alt="">
-    <p>${Math.ceil(vegQtt)}kg vegetarian food</p>
+    <p>${vegQtt.toFixed(1)}kg vegetarian food</p>
     </div>`
     
     result.innerHTML += 
     `<div class="icons">
     <img src="assets/alco.png" alt="">
-    <p>${Math.ceil(alcoholQtt)}L alcoholic drinks</p>
+    <p>${alcoholQtt.toFixed(1)}L alcoholic drinks</p>
     </div>`
     
     result.innerHTML += 
     `<div class="icons">
     <img src="assets/drinks.png" alt="">
-    <p>${Math.ceil(drinksQtt)}L alcohol-free drinks</p>
+    <p>${drinksQtt.toFixed(1)}L alcohol-free drinks</p>
     </div>`
     
     result.innerHTML += `<p class="res2">Please be aware that these quantities are estimates and that you may want to change them according to the weather and age of the adults</p>`
