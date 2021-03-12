@@ -9,8 +9,6 @@ DRINK -----------
 */
 
 
-let result = document.getElementById("result")
-
 function calculate() {
 
     let adults = document.getElementById("adults").value
@@ -22,43 +20,12 @@ function calculate() {
     let vegKids = document.getElementById("veg-kids").value
         if (vegKids < 0 || vegKids == "") {vegKids = 0}
     let duration = parseInt(document.querySelector('input[name="time"]:checked').value)
+    let result = document.getElementById("result")
 
     let meatQtt = ((meatPP(duration) * adults) + (meatPP(duration) * kids * 0.5)) / 1000
     let vegQtt = ((vegPP(duration) * vegAdults) + (vegPP(duration) * vegKids * 0.5)) / 1000
     let alcoholQtt = (alcoholPP(duration) * (parseInt(adults) + parseInt(vegAdults))) / 1000
     let drinksQtt = ((drinksPP(duration) * (parseInt(adults) + parseInt(vegAdults))) + (drinksPP(duration) * ((parseInt(kids) + parseInt(vegKids)) * 0.5))) / 1000
- 
-    function meatPP(duration) {
-        if (duration == 1) {
-            return 400
-        } else {
-            return 650
-        }
-    }
-
-    function vegPP(duration) {
-        if (duration == 1) {
-            return 430
-        } else {
-            return 700
-        }
-    }
-
-    function alcoholPP(duration) {
-        if (duration == 1) {
-            return 1200
-        } else {
-            return 2000
-        }
-    }
-
-    function drinksPP(duration) {
-        if (duration == 1) {
-            return 1000
-        } else {
-            return 1500
-        } 
-    }
     
     result.innerHTML = `<p class="res1">You will need:</p>`
 
@@ -87,4 +54,36 @@ function calculate() {
     </div>`
     
     result.innerHTML += `<p class="res2">Please be aware that these quantities are estimates and that you may want to change them according to the weather and age of the adults</p>`
+}
+
+function meatPP(duration) {
+    if (duration == 1) {
+        return 400
+    } else {
+        return 650
+    }
+}
+
+function vegPP(duration) {
+    if (duration == 1) {
+        return 430
+    } else {
+        return 700
+    }
+}
+
+function alcoholPP(duration) {
+    if (duration == 1) {
+        return 1200
+    } else {
+        return 2000
+    }
+}
+
+function drinksPP(duration) {
+    if (duration == 1) {
+        return 1000
+    } else {
+        return 1500
+    } 
 }
