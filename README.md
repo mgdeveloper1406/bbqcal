@@ -4,7 +4,7 @@
 
 Based on the number of guests, the BBQ Calculator will tell you how much food and drink is needed for your barbecue.
 
-It's my first project using javascript with HTML/CSS.
+It's my first project using JavaScript with HTML/CSS.
 
 Cheers! :wave:
 
